@@ -7,7 +7,7 @@ const Countdowns = () => {
   const targetDate1 = new Date('2025-02-01');
   const targetDate2 = new Date('2024-11-07');
   const targetDate3 = new Date('2024-12-21');
-  const targetDate4 = new Date('2025-02-03');
+  const targetDate4 = new Date('2024-10-01');
 
   const calculateTimeRemaining = (targetDate: Date) => {
     const currentDate = new Date();
@@ -53,7 +53,7 @@ const Countdowns = () => {
             { title: "Regreso en Febrero", days: daysUntilReunion, date: "Febrero 1, 2025" },
             { title: "Visita en Noviembre 7", days: daysUntilNovember7, date: "Noviembre 7, 2024" },
             { title: "Visita en Diciembre 21", days: daysUntilDecember21, date: "Diciembre 21, 2024" },
-            { title: "Regreso en Febrero 3", days: daysUntilReturn, date: "Febrero 3, 2025" }
+            { title: "Visita en Ocutbre 1", days: daysUntilReturn, date: "Octubre 1, 2024" }
           ].map((item, index) => (
             <div key={index} className={`shadow-lg rounded-lg p-6 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
               <h2 className="text-2xl font-bold mb-4">{item.title}</h2>
